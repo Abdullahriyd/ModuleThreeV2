@@ -1,4 +1,4 @@
-// Filtering Lowest Valu By array.reduce methode. where total or 1st parameter is 1st time tests then use as accumulator or storage. And 2nd parameter use as variable.
+//**  Filtering Lowest Valu By (array.reduce) methode where total or 1st parameter is 1st time tests then use as accumulator or storage. And 2nd parameter use as variable.*/
 
 var numbers = ['asdd','dd','jhhdj','ao','jbcc','bdugbu','gg'];
 
