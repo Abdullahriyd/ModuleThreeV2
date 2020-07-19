@@ -21,8 +21,8 @@ function tinyFriend( name ){
 
           let filteredString= '';
 
-          let element = filtered[i];
-          let workingString = element.trim();
+          let element = filtered[i].toUpperCase();
+          let workingString = element.trim();  //string.trim()
           
           for(let i=0; i<workingString.length; i++){
 
@@ -35,6 +35,7 @@ function tinyFriend( name ){
            }
 
            if(filteredString.length>0){
+              if (newWorkingArry.indexOf(filteredString)<0)
               newWorkingArry.push(filteredString);
            }
            
@@ -74,7 +75,7 @@ function tinyFriend( name ){
   }
 }
 
-let resultFriend = tinyFriend(['abu',,,'Asmot   Ullah Khan','  Hasan','Raz','   suvo  ','Imad Ali  ',' riyad ','Emon']);
+let resultFriend = tinyFriend(['abu','Abu','Asmot   Ullah Khan','Asmot Ullah khan',,,,'','','  ', ' Hasan','hasan  ','Raz','suvo','Suvo','Imad Ali  ',' riyad ','Emon']);
 
 console.log ('\nTiny Frind:\n', resultFriend ,'\n');
 
@@ -86,6 +87,9 @@ console.log ('\nTiny Frind:\n', resultFriend ,'\n');
 //let resultFriend = tinyFriend(['  ','',,,'Asmot   Ullah Khan','    Hasan','   suvo  ','Imad Ali  ',' riyad ','Emon']);
 //let resultFriend = tinyFriend(['abu',,'Asmot   Ullah Khan','  Hasan','Raz','   suvo  ','Imad Ali  ',' riyad ','Emon']);
 //let resultFriend = tinyFriend(['a','ab',,'abc','Asmot   Ullah Khan','b', 'c','    Hasan','   suvo  ','Imad Ali  ',' riyad ','Emon']);
+//let resultFriend = tinyFriend(['abu',,'Asmot   Ullah Khan','Asmot Ullah Khan', ' Hasan','Raz','suvo','suvo','Imad Ali  ',' riyad ','Emon']);
+//let resultFriend = tinyFriend(['abu','Abu','Asmot   Ullah Khan','Asmot Ullah khan',,,,'','','  ', ' Hasan','hasan  ','Raz','suvo','Suvo','Imad Ali  ',' riyad ','Emon']);
+//let resultFriend = tinyFriend([,,'','',' ','   ','  ','',,,'Asmot   Ullah Khan','    Hasan','   suvo  ','Imad Ali  ',' riyad ','Emon','abu',,'Asmot   Ullah Khan','  Hasan','Raz','   suvo  ','Imad Ali  ',' riyad ','Emon','abc','Asmot   Ullah Khan','b', 'c','    Hasan','   suvo  ','Imad Ali  ',' riyad ','Emon',,'Asmot   Ullah Khan','Asmot Ullah Khan', ' Hasan','Raz','suvo','suvo','Imad Ali  ',' riyad ','Emon','abu','Abu','Asmot   Ullah Khan','Asmot Ullah khan',,,,'','','  ', ' Hasan','hasan  ','Raz','suvo','Suvo','Imad Ali  ',' riyad ','Emon']);
 
 /**************************************************** End TinyFriend ******************************************************************************* */
 
